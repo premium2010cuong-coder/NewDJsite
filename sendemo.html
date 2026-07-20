@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CafftalDJ | Official Submit</title>
+
+    <style>
+
+        /* RESET & BASE STYLES */
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: #000; color: #fff; overflow-x: hidden; }
+
+
+
+        /* VIDEO BACKGROUND */
+
+        .video-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
+
+        #bg-video { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.4) contrast(1.2); }
+
+        .overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%); z-index: -1; }
+
+
+
+        /* NAVIGATION */
+
+        header { position: fixed; top: 0; width: 100%; padding: 30px 50px; display: flex; justify-content: space-between; align-items: center; z-index: 100; transition: background 0.3s; }
+
+        .logo { font-size: 24px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; }
+
+        nav ul { display: flex; list-style: none; gap: 30px; }
+
+        nav a { text-decoration: none; color: #fff; text-transform: uppercase; font-size: 12px; letter-spacing: 1px; transition: 0.3s; }
+
+        nav a:hover { color: #ff00ff; }
+
+        .contact-btn { border: 1px solid #fff; padding: 8px 20px; border-radius: 50px; }
+
+
+
+        /* MAIN CONTENT - CENTERED */
+
+        .hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+
+        .hero h1 { font-size: 8vw; font-weight: 900; color: transparent; -webkit-text-stroke: 2px #fff; transition: 0.5s; cursor: default; }
+
+        .hero h1:hover { color: #ff00ff; -webkit-text-stroke: 2px #ff00ff; text-shadow: 0 0 40px #ff00ff; }
+
+
+
+        /* LATEST RELEASE AREA */
+
+        .latest-section { position: absolute; bottom: 50px; left: 50px; border-left: 2px solid #ff00ff; padding-left: 20px; }
+
+        .latest-section p { font-size: 10px; letter-spacing: 2px; color: #ff00ff; margin-bottom: 10px; }
+
+        .latest-section a { color: #fff; text-decoration: none; font-size: 18px; transition: 0.3s; }
+
+        .latest-section a:hover { text-shadow: 0 0 15px #fff; }
+
+
+
+        /* BIO SECTION */
+
+        .bio-section { position: absolute; bottom: 50px; right: 50px; width: 300px; font-size: 14px; line-height: 1.6; opacity: 0.7; }
+
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <!-- VIDEO BACKGROUND -->
+
+    <div class="video-container">
+
+        <video autoplay muted loop playsinline id="bg-video">
+
+            <source src="demo.mp4" type="video/mp4">
+
+        </video>
+
+        <div class="overlay"></div>
+
+    </div>
+
+
+
+    <!-- NAVIGATION -->
+
+    <header>
+
+        <div class="logo">rapid reply in 24 hours</div>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="Connect.html">Connect</a></li>
+
+                <li><a href="video.html">Notification</a></li>
+
+                <li><a href="#">Shop open in 10th August</a></li>
+
+                <li><a href="sendemo.html" class="contact-btn">Send a Message</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    </header>
+    <!-- LATEST RELEASE -->
+
+    <div class="latest-section">
+
+        <p>● LATEST RELEASE</p>
+
+        <a href="https://music.youtube.com/playlist?list=OLAK5uy_k-0wx89rgGFE0f6uXCUMBcdPm3sPqZHfU" target="_blank">Listen to the new ALBUM→</a>
+
+    </div>
+
+
+
+    <!-- BIO -->
+
+    <div class="bio-section">
+
+        You allow to send feedback, ask for collaboration, submit demo, connect friend, tips, trick, music. You are not allow to send sexuality content,
+        troll, joke or stupid things, I love when you talk with me but respect me, thank you lovely. 
+
+    </div>
+
+    
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CafftalDJ | Official Site</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            background: #000; color: #fff; font-family: 'Segoe UI', sans-serif; 
+            display: flex; flex-direction: column; align-items: center; 
+            min-height: 100vh; padding: 50px 20px;
+        }
+
+        /* Tăng kích thước Social Box */
+        .social-box { 
+            background: rgba(255, 255, 255, 0.08); backdrop-filter: blur(20px); 
+            padding: 40px; border-radius: 30px; display: grid; 
+            grid-template-columns: repeat(4, 1fr); gap: 25px; 
+            border: 1px solid rgba(255, 255, 255, 0.15); width: 100%; max-width: 600px;
+        }
+        .social-icon { 
+            width: 80px; height: 80px; background: rgba(255, 255, 255, 0.05); 
+            border-radius: 20px; display: flex; justify-content: center; align-items: center; 
+            cursor: pointer; transition: 0.4s;
+        }
+        .social-icon:hover { background: #b00000; transform: scale(1.1); }
+
+        /* Phóng to Contact Form */
+        .contact-section { width: 100%; max-width: 600px; margin-top: 60px; }
+        .contact-section h2 { font-size: 48px; margin-bottom: 30px; }
+        input, textarea { 
+            width: 100%; padding: 20px; margin: 15px 0; 
+            background: rgba(255,255,255,0.05); border: 1px solid #444; 
+            border-radius: 12px; color: white; font-size: 16px;
+        }
+        button { 
+            width: 100%; padding: 20px; background: #b00000; 
+            border: none; border-radius: 12px; color: white; 
+            font-size: 18px; font-weight: bold; cursor: pointer; transition: 0.3s;
+        }
+
+        /* Music Player Ngang - Căn chỉnh lại */
+        .music-player { 
+            position: fixed; bottom: 40px; width: 90%; max-width: 700px; 
+            background: rgba(255,255,255,0.1); backdrop-filter: blur(20px); 
+            padding: 20px 40px; border-radius: 60px; display: flex; 
+            align-items: center; gap: 30px; border: 1px solid rgba(255,255,255,0.2); 
+            z-index: 1000;
+        }
+        .thumb { width: 70px; height: 70px; border-radius: 50%; object-fit: cover; }
+        .info h4 { font-size: 20px; }
+        .play-btn { font-size: 30px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+   
+
+    <div class="contact-section">
+        <h2>Contact me
+        </h2>
+        <form action="https://formspree.io/f/xjgnrrpn" method="POST" enctype="multipart/form-data">
+            <input type="text" name="name" placeholder="Your Cutie Name" required>
+            <input type="email" name="email" placeholder="yourname@email.com" required>
+            <textarea name="message" rows="4" placeholder="Note here.. (Allow to change a box size depend on your note)"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CafftalDJ | Official Site</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            background: #000; color: #fff; font-family: 'Segoe UI', sans-serif; 
+            display: flex; flex-direction: column; align-items: center; 
+            min-height: 100vh; padding: 50px 20px;
+        }
+
+        /* Tăng kích thước Social Box */
+        .social-box { 
+            background: rgba(255, 255, 255, 0.08); backdrop-filter: blur(20px); 
+            padding: 40px; border-radius: 30px; display: grid; 
+            grid-template-columns: repeat(4, 1fr); gap: 25px; 
+            border: 1px solid rgba(255, 255, 255, 0.15); width: 100%; max-width: 600px;
+        }
+        .social-icon { 
+            width: 80px; height: 80px; background: rgba(255, 255, 255, 0.05); 
+            border-radius: 20px; display: flex; justify-content: center; align-items: center; 
+            cursor: pointer; transition: 0.4s;
+        }
+        .social-icon:hover { background: #b00000; transform: scale(1.1); }
+
+        /* Phóng to Contact Form */
+        .contact-section { width: 100%; max-width: 600px; margin-top: 60px; }
+        .contact-section h2 { font-size: 48px; margin-bottom: 30px; }
+        input, textarea { 
+            width: 100%; padding: 20px; margin: 15px 0; 
+            background: rgba(255,255,255,0.05); border: 1px solid #444; 
+            border-radius: 12px; color: white; font-size: 16px;
+        }
+        button { 
+            width: 100%; padding: 20px; background: #b00000; 
+            border: none; border-radius: 12px; color: white; 
+            font-size: 18px; font-weight: bold; cursor: pointer; transition: 0.3s;
+        }
+
+        /* Music Player Ngang - Căn chỉnh lại */
+        .music-player { 
+            position: fixed; bottom: 40px; width: 90%; max-width: 700px; 
+            background: rgba(255,255,255,0.1); backdrop-filter: blur(20px); 
+            padding: 20px 40px; border-radius: 60px; display: flex; 
+            align-items: center; gap: 30px; border: 1px solid rgba(255,255,255,0.2); 
+            z-index: 1000;
+        }
+        .thumb { width: 70px; height: 70px; border-radius: 50%; object-fit: cover; }
+        .info h4 { font-size: 20px; }
+        .play-btn { font-size: 30px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+

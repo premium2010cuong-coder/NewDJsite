@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CafftalDJ | Official Connect</title>
+
+    <style>
+
+        /* RESET & BASE STYLES */
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: #000; color: #fff; overflow-x: hidden; }
+
+
+
+        /* VIDEO BACKGROUND */
+
+        .video-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
+
+        #bg-video { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.4) contrast(1.2); }
+
+        .overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%); z-index: -1; }
+
+
+
+        /* NAVIGATION */
+
+        header { position: fixed; top: 0; width: 100%; padding: 30px 50px; display: flex; justify-content: space-between; align-items: center; z-index: 100; transition: background 0.3s; }
+
+        .logo { font-size: 24px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; }
+
+        nav ul { display: flex; list-style: none; gap: 30px; }
+
+        nav a { text-decoration: none; color: #fff; text-transform: uppercase; font-size: 12px; letter-spacing: 1px; transition: 0.3s; }
+
+        nav a:hover { color: #ff00ff; }
+
+        .contact-btn { border: 1px solid #fff; padding: 8px 20px; border-radius: 50px; }
+
+
+
+        /* MAIN CONTENT - CENTERED */
+
+        .hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+
+        .hero h1 { font-size: 8vw; font-weight: 900; color: transparent; -webkit-text-stroke: 2px #fff; transition: 0.5s; cursor: default; }
+
+        .hero h1:hover { color: #ff00ff; -webkit-text-stroke: 2px #ff00ff; text-shadow: 0 0 40px #ff00ff; }
+
+
+
+        /* LATEST RELEASE AREA */
+
+        .latest-section { position: absolute; bottom: 50px; left: 50px; border-left: 2px solid #ff00ff; padding-left: 20px; }
+
+        .latest-section p { font-size: 10px; letter-spacing: 2px; color: #ff00ff; margin-bottom: 10px; }
+
+        .latest-section a { color: #fff; text-decoration: none; font-size: 18px; transition: 0.3s; }
+
+        .latest-section a:hover { text-shadow: 0 0 15px #fff; }
+
+
+
+        /* BIO SECTION */
+
+        .bio-section { position: absolute; bottom: 50px; right: 50px; width: 300px; font-size: 14px; line-height: 1.6; opacity: 0.7; }
+
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <!-- VIDEO BACKGROUND -->
+
+    <div class="video-container">
+
+        <video autoplay muted loop playsinline id="bg-video">
+
+            <source src="connect.mp4" type="video/mp4">
+
+        </video>
+
+        <div class="overlay"></div>
+
+    </div>
+
+
+
+    <!-- NAVIGATION -->
+
+    <header>
+
+        <div class="logo">CafftalTheGoodBoy</div>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="Connect.html">Connect</a></li>
+
+                <li><a href="video.html">Notification</a></li>
+
+                <li><a href="#">Shop open in 10th August</a></li>
+
+                <li><a href="sendemo.html" class="contact-btn">Send a message</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+    <!-- LATEST RELEASE -->
+
+    <div class="latest-section">
+
+        <p>● LATEST RELEASE</p>
+
+        <a href="https://music.youtube.com/playlist?list=OLAK5uy_k-0wx89rgGFE0f6uXCUMBcdPm3sPqZHfU" target="_blank">Listen to the new ALBUM→</a>
+
+    </div>
+
+
+
+    <!-- BIO -->
+
+    <div class="bio-section">
+
+        Follow my journey, check out my news, follow is free, give me one guys
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAFFTALDJ Social Media Hub</title>
+    <!-- Include Font Awesome for professional social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Use Inter font for a clean, professional look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #bd5e5e;
+            padding: 50px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* --- Social Hub Container (Medium Size, Centered Card) --- */
+        .social-hub-container {
+            max-width: 800px; /* Increased max-width to accommodate more links */
+            width: 100%;
+            background: #daadad;
+            padding: 40px;
+            border-radius: 16px;
+            /* Professional elevation shadow */
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1); 
+            text-align: center;
+        }
+
+        .hub-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #7a3232;
+            margin-bottom: 10px;
+        }
+
+        .hub-subtitle {
+            font-size: 16px;
+            color: #441f1f;
+            margin-bottom: 30px;
+        }
+
+        /* --- Social Links Grid --- */
+        .social-links-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px 15px;
+        }
+
+        .social-link {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+            padding: 15px;
+            border-radius: 12px;
+            
+            /* Professional hover effects with a 'springy' feel */
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            background-color: transparent;
+            width: 100px; /* Uniform width for clean layout */
+        }
+
+        .social-link:hover {
+            background-color: #e98282;
+            transform: translateY(-5px); /* Lift effect */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        /* --- Icon Styling --- */
+        .social-icon {
+            font-size: 30px;
+            margin-bottom: 8px;
+            color: #c47b7b; /* Neutral default icon color */
+            transition: color 0.3s ease;
+        }
+        
+        /* Icon Color Overrides on Hover (Branded Colors) */
+        .social-link:hover .social-icon.spotify-icon { color: #1DB954; }
+        .social-link:hover .social-icon.apple-icon { color: #555555; }
+        .social-link:hover .social-icon.tidal-icon { color: #00A6DA; }
+        .social-link:hover .social-icon.tiktok-icon { color: #FE2C55; }
+        .social-link:hover .social-icon.facebook-icon { color: #1877F2; }
+        .social-link:hover .social-icon.youtube-icon { color: #FF0000; }
+        .social-link:hover .social-icon.youtube-music-icon { color: #FF0000; } /* YouTube Music Red */
+        .social-link:hover .social-icon.instagram-icon { color: #C13584; }
+        .social-link:hover .social-icon.twitter-icon { color: #000000; } /* Black for X */
+        .social-link:hover .social-icon.amazon-music-icon { color: #FF9900; }
+        .social-link:hover .social-icon.snapchat-icon { color: #FFFC00; }
+        .social-link:hover .social-icon.genius-icon { color: #FFD100; }
+        .social-link:hover .social-icon.lyricfind-icon { color: #6C7A89; }
+        .social-link:hover .social-icon.qobuz-icon { color: #812036; }
+        .social-link:hover .social-icon.boomplay-icon { color: #000000; }
+        .social-link:hover .social-icon.iheartmusic-icon { color: #C60023; }
+        .social-link:hover .social-icon.roblox-icon { color: #000000; }
+        .social-link:hover .social-icon.bandsintown-icon { color: #00bcd4; } /* Bandsintown vibrant blue */
+
+
+        /* --- Text Label Styling --- */
+        .social-label {
+            font-size: 14px;
+            font-weight: 600;
+            color: #34495e;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 600px) {
+            .social-hub-container {
+                padding: 30px 20px;
+            }
+            .social-links-grid {
+                gap: 15px 10px;
+            }
+            .social-link {
+                width: 70px; 
+                padding: 10px 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="social-hub-container">
+        <h2 class="hub-title">Connect with ME ( •̀ ω •́ )✧
+        </h2>
+        <p class="hub-subtitle">
+            Cafftal's Social Media and Streaming page
+        </p>
+
+        <div class="social-links-grid">
+            
+        
+            <!-- SPOTIFY -->
+            <a href="https://open.spotify.com/artist/0DucnK3dFynLHaNPvhDnRU" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Spotify">
+                <i class="fab fa-spotify social-icon spotify-icon"></i>
+                <span class="social-label">Spotify</span>
+            </a>
+
+            <!-- APPLE MUSIC -->
+            <a href="https://music.apple.com/us/artist/cafftalthegoodboy/1885144236" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Apple Music">
+                <i class="fab fa-apple social-icon apple-icon"></i>
+                <span class="social-label">Apple Music</span>
+            </a>
+
+            <!-- TIDAL -->
+            <a href="https://tidal.com/artist/75951470" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Tidal">
+                <i class="fas fa-volume-up social-icon tidal-icon"></i>
+                <span class="social-label">Tidal</span>
+            </a>
+            
+            <!-- TIKTOK -->
+            <a href="https://www.tiktok.com/@cafftalthegoodboy" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Tiktok">
+                <i class="fab fa-tiktok social-icon tiktok-icon"></i>
+                <span class="social-label">Tiktok</span>
+            </a>
+            
+            <!-- YOUTUBE -->
+            <a href="https://www.youtube.com/channel/UCP2N4qS_681C4Fjvr4a3eIA" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                <i class="fab fa-youtube social-icon youtube-icon"></i>
+                <span class="social-label">YouTube</span>
+            </a>
+
+            <!-- YOUTUBE MUSIC (New Addition) -->
+            <a href="https://music.youtube.com/@CafftalDJ" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="YouTube Music">
+                <i class="fab fa-youtube social-icon youtube-music-icon"></i>
+                <span class="social-label">YouTube Music</span>
+            </a>
+
+            <!-- INSTAGRAM -->
+            <a href="https://www.instagram.com/cafftaldj/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <i class="fab fa-instagram social-icon instagram-icon"></i>
+                <span class="social-label">Instagram</span>
+            </a>
+            
+            <!-- TWITTER/X -->
+            <a href="https://x.com/cafftalDJ" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <i class="fab fa-x-twitter social-icon twitter-icon"></i>
+                <span class="social-label">Twitter/X</span>
+            </a>
+            
+            <!-- AMAZON MUSIC -->
+            <a href="https://music.amazon.it/artists/B0GSKGWGBX/cafftalthegoodboy?marketplaceId=APJ6JRA9NG5V4&musicTerritory=IT&ref=dm_sh_8E03so8yG5BdSXBJ7cK40qIoL" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Amazon Music">
+                <i class="fab fa-amazon social-icon amazon-music-icon"></i>
+                <span class="social-label">Amazon Music</span>
+            </a>
+            
+          
+            
+            <!-- GENIUS -->
+            <a href="https://genius.com/artists/Cafftalthegoodboy" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Genius">
+                <i class="fas fa-lightbulb social-icon genius-icon"></i>
+                <span class="social-label">Genius</span>
+            </a>
+
+       
+
+    
+            
+
+
+            <!-- IHEARTMUSIC -->
+            <a href="https://www.iheart.com/artist/cafftalthegoodboy-50035778/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="iHeartMusic">
+                <i class="fas fa-heart social-icon iheartmusic-icon"></i>
+                <span class="social-label">iHeartMusic</span>
+            </a>
+
+            <!-- ROBLOX -->
+            <a href="https://www.roblox.com/users/3448786834/profile" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Roblox">
+                <i class="fas fa-gamepad social-icon roblox-icon"></i>
+                <span class="social-label">Roblox</span>
+            </a>
+
+           
+
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
